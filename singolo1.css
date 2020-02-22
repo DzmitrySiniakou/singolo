@@ -137,7 +137,11 @@ li {
 
 .slider-block-colored {
     height: 5px;
-    background-color: #ea676b;
+    background-color: #ea676b;   
+}
+.
+slider-arrow-left-link {
+    cursor: pointer;
 }
 
 /** footer **/
