@@ -146,6 +146,8 @@ li {
     padding: 67px 40px 0px 40px;
     height: 435px;
     background-color: #f2f2f2;
+    border-bottom: 5px;
+    border-color: #ffffff;
     
 }
 .footer-content-head {
@@ -212,9 +214,3 @@ li {
 .footer-content-logo-img-tree{
     margin-left: 20px;
 }
-
-.footer-block-colored {
-    height: 5px;
-    background-color: #ffffff;
-}
-
