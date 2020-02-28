@@ -1,16 +1,17 @@
 * {
     margin: 0;
 	padding: 0;
-	border: 0;
+    border: 0;
     font-size: 100%;
     box-sizing: border-box;
 }
 
 body {
-    background: rgb(212, 140, 140); 
+    background: black; 
 }
 
-/* Header бэк временно*/
+/* Portfolio */
+
 .wrapper {
     margin: 0 40px;
 }
@@ -19,44 +20,58 @@ body {
     width: 1020px; 
     margin: 0 auto;
     background-color: #2d303a;
-
+    border-bottom: 6px solid #323746;
 }
 
 p {
+    font-family: "Lato";
+    text-align: left;
 }
 
 .header-title {
+    padding: 68px 0 28px 0;
+    letter-spacing: 0.6px;
     font-size: 30px;
     line-height: 18px;
     color: #666d89;
-    font-family: "Lato";
     font-weight: 900;
-    text-align: left;
 }
 
 .header-description {
+    letter-spacing: -0.20px;
+    word-spacing: 0.35px;
     width: 940px;
-    height: 57px;
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
-    font-family: "Lato";
     font-weight: 300;
-    text-align: left;
 }
 
 .header__navigation{
+    padding: 11px 0 21px 0;
 }
 
-.navigation__button {
+.navigation {
     display: flex;
     list-style-type: none;
 }
 
-.navigation__button li {
+a {
+    text-decoration: none;
+}
+
+.navigation li:hover{
+    background-color: #363946;
+    border-color: #919bc2;
+    transition: all .3s;
+    color: #f7f0f0;
+    
+}
+
+.navigation li {
     height: 22px;
     border-radius: 5px;
-    background-color: #2d303a;
+    background-color: transparent;
     border: 1px solid #666d89;
     font-size: 12px;
     line-height: 22px;
@@ -68,6 +83,8 @@ p {
 }
 
 .button-all{
+    border: 1px solid #ffffff !important;
+    color: #ffffff !important;
     width: 29px;
 }
 .button-web-design {
@@ -82,7 +99,12 @@ p {
 
 /* section with picture*/
 
+.art-navigation{
+    height: 668px;
+}
+
 .art-colletion {
+    height: 618px;
 	display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -94,6 +116,69 @@ p {
 
 .img-collection {
     width: 220px;
-    height: 187px;
-    margin-bottom: 20px;
+    height: 187px;  
+}
+
+/* About us*/
+
+.footer {
+    height: 728px;
+    width: 1020px; 
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    border-bottom: 6px solid #ffffff; 
+}
+
+.about-us {
+    padding: 68px 0 28px 0;
+    letter-spacing: 0.6px;
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-weight: 900;
+}
+
+.footer-description {
+    letter-spacing: -0.20px;
+    word-spacing: 0.35px;
+    width: 940px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-weight: 300; 
+    text-align: justify;    
+}
+
+.contacts {
+    margin-top: 46px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-box {
+    height: 443px;
+    width: 300px; 
+}
+.contact-name{
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-weight: 900;
+    padding: 11px 0px;
+    white-space: nowrap;
+}
+
+.contact-description{
+    width: 299px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-weight: 400;
+    padding: 2px 0px 22px 0px;
+    text-align: justify;   
+}
+
+.contact-img {
+    padding-right: 4px;
 }
