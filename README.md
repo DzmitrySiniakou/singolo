@@ -5,3 +5,7 @@ Here to see:
 <https://DzmitrySiniakou.github.io/singolo/singolo2.html>
 
 <https://DzmitrySiniakou.github.io/singolo/singolo3.html>
+
+Final singolo:
+
+<https://DzmitrySiniakou.github.io/singolo/index.html>
