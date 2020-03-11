@@ -7,6 +7,7 @@
     <title>SINGOLO</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="./script.js"></script>
 </head>    
 <body>          
     <div class="wrapper">
@@ -32,8 +33,11 @@
     <div class="wrapper">
         <section class="iphone">  
             <div class="slider-iphone">
-                <div class="slider-arrow-left">
-                    <a href ="#" class="slider-arrow-left-link"><img src="./assets/images/arrow-active.png" alt="#" class="slider-arrow-left-img"/></a>
+
+
+
+                <div class="slider-arrow-left" id="block-two-phone">
+                    <a onclick="changeSlide('block-one-phone')" class="slider-arrow-left-link"><img src="./assets/images/arrow-active.png" alt="#" class="slider-arrow-left-img"/></a>
                 </div>
                 <div>                    
                     <img src="./assets/images/iPhone-Vertical.png" class="slider-iphone-left" alt="#"/>
@@ -42,8 +46,24 @@
                     <img src="./assets/images/Shadow.png" class="shadow-right" alt="#"/>
                 </div>
                 <div class="slider-arrow-right">
-                    <a href ="#" class="slider-arrow-left-link"><img src="./assets/images/arrow-active.png" alt="#" class="slider-arrow-left-img"/></a>
+                    <a onclick="changeSlide('block-one-phone')" class="slider-arrow-left-link"><img src="./assets/images/arrow-active.png" alt="#" class="slider-arrow-left-img"/></a>
                 </div>
+
+                <div class="" id="block-one-phone">
+                    <a onclick="changeSlide('block-two-phone')" class=""><img src="./assets/images/arrow-active.png" alt="#" class="slider-arrow-left-img"/></a>
+                </div>
+                <div>                    
+                    <img src="" class="" alt="#"/>
+                    <img src="" class="" alt="#"/>                   
+                    <img src="" class="" alt="#"/>
+                    <img src="./assets/images/iphone-vertical-dark.png" class="shadow-right" alt="#"/>
+                </div>
+                <div class="t">
+                    <a onclick="changeSlide('block-two-phone')" class=""><img src="./assets/images/arrow-active.png" alt="#" class="slider-arrow-left-img"/></a>
+                </div>
+
+
+
             </div>                
         </section>
         <div class="slider-block-colored"></div>
