@@ -167,22 +167,22 @@ li {
     height: 596px;
 }
 
+.iPhone-Vertical-right-shadow,
 .iPhone-Vertical-left-shadow{
-    width: 112%;
-}
+    width: 156.02px;
+    height: 304px;
+} 
 
-.iPhone-Vertical-right-shadow{
-    width: 87%;
-}
-
-.iPhone-Vertical-left,
-.iPhone-Vertical-right{
-    width: 15%;
+.iPhone-Vertical-right,
+.iPhone-Vertical-left{
+    width: 140px;
+    height: 290px;
 }
 
 .iPhone-Vertical-left-shadow,
 .iPhone-Vertical-left{
-    margin-right: -73px;
+    margin-right: -16px;
+    z-index: 4;
 }
 
 .iPhone-Vertical-right,
@@ -194,7 +194,11 @@ li {
 .iPhone-Vertical-left{
     position: absolute;
     opacity: 0.5;
-    margin-top: -191px;
+    margin-top: -154px;
+}
+
+.iphone-vertical-dark{
+    z-index: 5;
 }
 
 .slider-arrow-right-img-second-slider{
