@@ -10,21 +10,21 @@
     <script type="text/javascript" src="./script.js"></script>
 </head>    
 <body>          
-    <div class="wrapper">
+    <div class="wrapper" id="home">
         <header class="header">
             <h1 class="logo">SINGOLO</h1>
             <span class="icon">*</span>
             <nav class="header__buttons">
                 <ul class="navigation">
-                    <li><a href="#" class ="navigation-active">HOME</a></li>
+                    <li><a href="#home" class ="navigation-active">HOME</a></li>
                     <li class="dot-between-word">·</li>
-                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#services">SERVICES</a></li>
                     <li class="dot-between-word">·</li>
-                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
                     <li class="dot-between-word">·</li>
-                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#about">ABOUT</a></li>
                     <li class="dot-between-word">·</li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#form">CONTACT</a></li>
                 </ul>
             </nav>
         </header>
@@ -33,9 +33,6 @@
     <div class="wrapper">
         <section class="iphone">  
             <div class="slider-iphone" id="block-two-phone">
-
-
-
                 <div class="slider-arrow-left">
                     <a onclick="changeSlide('block-one-phone')" class="slider-arrow-left-link"><img src="./assets/images/arrow-active.png" alt="#" class="slider-arrow-left-img"/></a>
                 </div>
@@ -48,12 +45,8 @@
                 <div class="slider-arrow-right">
                     <a onclick="changeSlide('block-one-phone')" class="slider-arrow-left-link"><img src="./assets/images/arrow-active.png" alt="#" class="slider-arrow-left-img"/></a>
                 </div>
-
-
             </div>
-            <div class="slider-iphone" id="block-one-phone" style="display: none">
-
-                
+            <div class="slider-iphone" id="block-one-phone" style="display: none">   
                 <div class="iphone-second-slide-arrow-left">
                     <a onclick="changeSlide('block-two-phone')" class=""><img src="./assets/images/arrow-active.png" alt="#" class="slider-arrow-left-img-second-slider"/></a>
                 </div>
@@ -67,14 +60,11 @@
                 <div class="i">
                     <a onclick="changeSlide('block-two-phone')" class=""><img src="./assets/images/arrow-active.png" alt="#" class="slider-arrow-right-img-second-slider"/></a>
                 </div>
-
-
-
             </div>                
         </section>
     </div>
     <div class="wrapper">
-        <section class="our-services">
+        <section class="our-services" id="services">
             <div class="our-services-content">
                 <div class="title-our-services">Our Services</div>
                 <div class="our-services-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus as cursus commodo,tortor mauris condimentum nibh.</div>
@@ -122,7 +112,7 @@
         </section> 
         <div class="our-services-border"></div>   
     </div>   
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="portfolio-content-area">
             <div class="header-info">
                 <p class="portfolio-title">Portfolio</p>
@@ -183,7 +173,7 @@
             </div>
         </section>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="portfolio-content-area">
             <p class="about-us">About Us</p>
             <p class="about-us-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -230,7 +220,7 @@
             </div>
         </div>   
     </section>
-    <section class="form">
+    <section class="form" id="form">
         <div class="form-content-area">
             <p class="form__title">Get a Quote</p>
             <p class="form__description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimen. Duis mollis, non
