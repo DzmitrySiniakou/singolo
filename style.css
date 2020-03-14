@@ -4,7 +4,8 @@
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -59,9 +60,8 @@ li {
     letter-spacing: -0.4px;
 }
 
-.header nav a {
+a {
     font-size: 12px;
-    text-decoration: none;
     color: #ffffff;
     font-family: "Lato";
 }
@@ -114,6 +114,7 @@ li {
     padding-top: 53px;
     padding-left: 54px;
     position: absolute;
+    cursor: pointer;
 }
 
 .shadow-left{
@@ -127,6 +128,7 @@ li {
     transform: rotate(90deg);
     z-index: 2;
     position: relative;
+    cursor: pointer;
 }
 
 .shadow-right{
@@ -154,6 +156,23 @@ li {
     border-radius: 50px;
     background-color: lavender;
     transition: all .5s;
+}
+
+.black-background-horizontal,
+.black-background{
+    position: absolute;
+    height: 334px;
+    width: 190px;
+    z-index: 6;
+}
+
+.black-background{
+    margin: 118px 0px 0px 67px;
+}
+
+.black-background-horizontal{
+    transform: rotate(90deg);
+    margin: 115px 0 0 201px;
 }
 
 /* second slide */
@@ -379,7 +398,7 @@ a {
     justify-content: space-between;
 }
 
-.art-colletion-img:nth-child(12) {
+.art-colletion-img:nth-child(13) {
 	display: none;
 }
 
@@ -579,6 +598,39 @@ textarea {
     color: #f48c8f;
 }
 
+#message-block {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #0008;
+    z-index: 10;
+}
+
+#message-block.hidden {
+    display: none;
+}
+
+#message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 2px solid black;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #f48c8f;
+}
+
+#close-btn {
+    background-color: #f48c8f;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+#message p{
+    margin: 10px 20px 5px 20px;
+}
 .form-2-column{
     display: flex;
 }
