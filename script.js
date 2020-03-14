@@ -24,14 +24,24 @@ function blackPhoneHorizontal(){
 
 
 BUTTON.addEventListener('click', () => {
-   const subject = document.getElementById('name_req').value.toString();
-   // const subject = document.getElementById('mail_req').value.toString();
-   // const subject = document.getElementById('subj_req').value.toString();
-   document.getElementById('result').innerText = subject;
+   const subject = document.getElementById('subj_req').value.toString();
+   const subjectDescription = document.getElementById('subj_req').value.toString();
+   if (subject === ''){
+      document.getElementById('subj_result').innerText = "Без темы";
+   } else {
+      document.getElementById('subj_result').innerText = subject; 
+   }
+   if (subjectDescription === ''){
+      document.getElementById('result_description').innerText = 'Без описания';
+   } else {
+      document.getElementById('result_description').innerText = subjectDescription; 
+   }
    document.getElementById('message-block').classList.remove('hidden');
 });
 
 CLOSE_BUTTON.addEventListener('click', () => {
-   document.getElementById('result').innerText = '';
    document.getElementById('message-block').classList.add('hidden');
+   document.getElementById('subj_result').innerText = ' ';
+   document.getElementById('result_description').innerText = 'sd';
+
 });
