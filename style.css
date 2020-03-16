@@ -361,18 +361,26 @@ a {
     border: 1px solid #666d89;
     font-size: 12px;
     line-height: 22px;
-    color: #767e9e; 
+    
     font-family: "Lato";
     font-weight: 400;
     text-align: center;
     margin-right: 8px;
 }
 
-.button-all{
-    border: 1px solid #ffffff !important;
+.portfolio-navigation a{
+    color: #767e9e;
+    cursor: pointer; 
+}
+
+.button-active{
     color: #ffffff !important;
+}
+
+.button-all{
     width: 29px;
 }
+
 .button-web-design {
     width: 78px;
 }
