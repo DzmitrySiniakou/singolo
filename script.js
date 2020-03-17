@@ -3,6 +3,7 @@ const BUTTON = document.getElementById('btn');
 const CLOSE_BUTTON = document.getElementById('close-btn');
 const MENU_PORTFOLIO = document.getElementById('portfolio-navigation');
 const ART_COLLECTION_IMGS = document.getElementsByClassName('art-colletion-img');
+const ART_COLLECTION_ACTIVE = document.getElementById('art-colletion');
 
 
 MENU.addEventListener('click', (event) => {
@@ -29,30 +30,37 @@ MENU_PORTFOLIO.addEventListener('click', (event) => {
    event.target.classList.add('button-active');
 });
 
-MENU_PORTFOLIO.addEventListener('click', function sort() {
-   // ART_COLLECTION_IMGS.forEach((element, index) => {
-   //    changePosition(index, randomOneTwe(), ART_COLLECTION_IMGS)
-   // });
-   abs(ART_COLLECTION_IMGS)
-   
- });
+ART_COLLECTION_ACTIVE.addEventListener('click', (event) => {
+   ART_COLLECTION_ACTIVE.querySelectorAll('a').forEach(el => el.classList.remove('art-colleting-active'));
+   event.target.classList.add('art-colleting-active');
+});
 
-function abs (element, index) {
-   return changePosition(index, randomOneTwe(), ART_COLLECTION_IMGS);
-}
+
+
+MENU_PORTFOLIO.addEventListener('click', function sort() {
+   for (let i = 0; i < ART_COLLECTION_IMGS.length - 1; i++ ){
+     changePosition(i , randomOneTwe(), ART_COLLECTION_IMGS);
+   };
+});
 
 function randomOneTwe(){
-   Math.ceil(Math.random()*12);
-}
+   return Math.round((Math.random()*11));
+};
 
 function changePosition(firstIndex, secondIndex, arr){
-   const fElem = arr[firstIndex];
-   const sElem = arr[secondIndex];
-   arr[firstIndex] = sElem;
-   arr[secondIndex] = fElem;
-}
+   const fElem = arr[firstIndex].innerHTML;
+   const sElem = arr[secondIndex].innerHTML;
+   arr[firstIndex].innerHTML = sElem;
+   arr[secondIndex].innerHTML = fElem;
+   return;
+};
 
-BUTTON.addEventListener('click', () => {
+
+
+
+
+BUTTON.addEventListener('click', (event) => {
+   event.preventDefault();
    const subject = document.getElementById('subj_req').value.toString();
    const subjectDescription = document.getElementById('subj_req').value.toString();
    if (subject === ''){
@@ -69,6 +77,7 @@ BUTTON.addEventListener('click', () => {
 });
 
 CLOSE_BUTTON.addEventListener('click', () => {
+   event.preventDefault();
    document.getElementById('message-block').classList.add('hidden');
    document.getElementById('subj_result').innerText = '';
    document.getElementById('result_description').innerText = '';

@@ -406,6 +406,11 @@ a {
     justify-content: space-between;
 }
 
+.art-colletion-img{
+width: 220px;
+height: 187px;
+}
+
 .art-colletion-img:nth-child(13) {
 	display: none;
 }
@@ -413,6 +418,14 @@ a {
 .img-collection {
     width: 220px;
     height: 187px;  
+}
+
+.art-colleting-active{
+    border-color: red;
+    border: 5px;
+    z-index: 10;
+    width: 220px;
+    height: 187px; 
 }
 
 /* About us*/
