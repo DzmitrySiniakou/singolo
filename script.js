@@ -1,10 +1,13 @@
 const MENU = document.getElementById('navigation');
-const BUTTON = document.getElementById('btn');
-const CLOSE_BUTTON = document.getElementById('close-btn');
+const CHANGE_PHONE_DISPLAY = document.getElementById('slider-iphone-left');
+const CHANGE_PHONE_DISPLAY_HORIZ = document.getElementById('slider-iphone-right');
+const BLACK_BACKGROUND_PHONE = document.getElementById('black-background');
+const BLACK_BACKGROUND_PHONE_HORIZ = document.getElementById('black-background-horizontal');
 const MENU_PORTFOLIO = document.getElementById('portfolio-navigation');
 const ART_COLLECTION_IMGS = document.getElementsByClassName('art-colletion-img');
 const ART_COLLECTION_ACTIVE = document.getElementById('art-colletion');
-
+const BUTTON = document.getElementById('btn');
+const CLOSE_BUTTON = document.getElementById('close-btn');
 
 MENU.addEventListener('click', (event) => {
    MENU.querySelectorAll('a').forEach(el => el.classList.remove('navigation-active'));
@@ -17,13 +20,21 @@ function changeSlide(id){
    document.getElementById("block-one-phone").style.background = "#648BF0";
 }
 
-function blackPhone(){
+CHANGE_PHONE_DISPLAY.addEventListener('click', () => {
    document.getElementById('black-background').style.display = "inline";
-}
+});
 
-function blackPhoneHorizontal(){
+CHANGE_PHONE_DISPLAY_HORIZ.addEventListener('click', () => {
    document.getElementById('black-background-horizontal').style.display = "inline";
-}
+});
+
+BLACK_BACKGROUND_PHONE.addEventListener('click', () => {
+   document.getElementById('black-background').style.display = "none";
+});
+
+BLACK_BACKGROUND_PHONE_HORIZ.addEventListener('click', () => {
+   document.getElementById('black-background-horizontal').style.display = "none";
+});
 
 MENU_PORTFOLIO.addEventListener('click', (event) => {
    MENU_PORTFOLIO.querySelectorAll('a').forEach(el => el.classList.remove('button-active'));
@@ -34,8 +45,6 @@ ART_COLLECTION_ACTIVE.addEventListener('click', (event) => {
    ART_COLLECTION_ACTIVE.querySelectorAll('a').forEach(el => el.classList.remove('art-colleting-active'));
    event.target.classList.add('art-colleting-active');
 });
-
-
 
 MENU_PORTFOLIO.addEventListener('click', function sort() {
    for (let i = 0; i < ART_COLLECTION_IMGS.length - 1; i++ ){
@@ -55,10 +64,6 @@ function changePosition(firstIndex, secondIndex, arr){
    return;
 };
 
-
-
-
-
 BUTTON.addEventListener('click', (event) => {
    event.preventDefault();
    const subject = document.getElementById('subj_req').value.toString();
@@ -76,7 +81,7 @@ BUTTON.addEventListener('click', (event) => {
    document.getElementById('message-block').classList.remove('hidden');
 });
 
-CLOSE_BUTTON.addEventListener('click', () => {
+CLOSE_BUTTON.addEventListener('click', (event) => {
    event.preventDefault();
    document.getElementById('message-block').classList.add('hidden');
    document.getElementById('subj_result').innerText = '';

@@ -61,6 +61,7 @@ li {
 }
 
 a {
+    cursor: pointer;
     font-size: 12px;
     color: #ffffff;
     font-family: "Lato";
@@ -164,6 +165,7 @@ a {
     height: 334px;
     width: 190px;
     z-index: 6;
+    cursor: pointer;
 }
 
 .black-background{
@@ -629,6 +631,8 @@ textarea {
     z-index: 10;
 }
 
+.black-background,
+.black-background-horizontal,
 #message-block.hidden {
     display: none;
 }
