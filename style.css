@@ -201,7 +201,7 @@ a {
 
 .slider-iphone-second-img{
     display: flex;
-    margin: 0 0 0 22vw;
+    margin: 0 0 0 20vw;
     align-items: center;
     width: 90.6vw;
     height: 59.6vw;
@@ -284,7 +284,6 @@ a {
     display: flex;
     padding: 0.4%;
     max-width: 305px;
-    height: 41%;
 }
 
 .our-service-3-columns{
@@ -896,7 +895,7 @@ textarea {
     }
 }
 
-@media (max-width:768px) {
+@media (min-width: 768px) and (max-width:1020px) {
 
     .contact-box{
         width: 218px;
@@ -909,10 +908,139 @@ textarea {
     }
 
     .contact-img {
-        height: 218px;
-        width: 218px;
+        height: 30vw;
+        width: 30vw;
     }
 
 }
 
+@media (min-width: 375px) and (max-width:768px) {
+    .header{
+        justify-content: center;
+    }
 
+    h1 {
+        padding-left: 0px;
+    }
+
+    .header__buttons {
+        display: none;
+    }
+
+    .slider-iphone-right {
+        left: 34%;
+    }
+
+    .shadow-right {
+        padding-bottom: 9.3vw;
+        padding-left: 1.4vw;
+    }
+
+    .slider-arrow-right-img-second-slider {
+        margin: 28.1vw 0 0 -8.5vw;
+    }
+
+    /* our services */
+    .title-our-services {
+        padding: 30px 20px 0 20px;
+    }
+
+    .our-service-3-columns {
+        padding: 0 20px 0 20px;
+    }
+
+    .our-services-content-head {
+        height: 14px;
+        font-size: 21px;
+    }
+
+    .our-services-content-text {
+        font-size: 13px;
+        max-width: 58vw;
+    }
+
+    /* portfolio */
+
+    .portfolio-title {
+        padding: 40px 0 30px 30px;
+    }
+
+    .portfolio-description {
+        padding: 0px 40px 0px 30px;
+    }
+
+    .portfolio-navigation {
+        padding: 10px 40px 0px 20px;
+    }
+
+    .img-collection {
+        width: 151px;
+        height: 128px;
+    }
+
+    .art-colletion-img {
+        width: 151px;
+        height: 128px;
+        margin: 5px;
+        margin-bottom: 5px;
+    }
+
+    .art-colletion {
+        margin: 3vw 25px 0 25px;
+    }
+
+    .art-navigation {
+        padding-bottom: 30px;
+    }
+
+    /* About us */
+
+    .about-us {
+        padding: 40px 25px 28px 25px;
+    }
+
+    .about-us-description {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .contacts {
+        margin: 30px 25px 0 25px;
+    }
+
+    .contact-img {
+        height: 333px;
+        width: 333px;
+    }
+
+    .contact-link {
+        padding-bottom: 20px;
+    }
+
+    /* form */
+
+    .form__title {
+        padding: 30px 25px 28px 25px;
+    }
+
+    .form__description {
+        padding: 0px 25px 0px 25px;
+    }
+
+    .layout-2-column {
+        padding: 30px 25px 0px 25px;
+    }
+
+    .from__filed {
+        width: 78vw;
+    }
+
+    #subj_description {
+        width: 78vw;
+    }
+
+    .form__fill-contact {
+        padding-top: 20px;
+        padding-left: 0px
+    }
+}
