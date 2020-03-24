@@ -946,7 +946,12 @@ textarea {
     }
 
     .our-service-3-columns {
-        padding: 0 20px 0 20px;
+        padding: 0 15px 0 15px;
+        justify-content: center;
+    }
+
+    .our-service-info-img {
+        max-width: 380px;
     }
 
     .our-services-content-head {
@@ -956,7 +961,8 @@ textarea {
 
     .our-services-content-text {
         font-size: 13px;
-        max-width: 58vw;
+        max-width: 72vw;
+        width: 286px;
     }
 
     /* portfolio */
@@ -1005,7 +1011,9 @@ textarea {
     }
 
     .contacts {
-        margin: 30px 25px 0 25px;
+        justify-content: center;
+        margin: 30px 15px 0 15px;
+        width: 85vw;
     }
 
     .contact-img {
@@ -1043,4 +1051,8 @@ textarea {
         padding-top: 20px;
         padding-left: 0px
     }
+}
+
+@media (max-width: 375px) {
+
 }
