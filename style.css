@@ -16,7 +16,7 @@ body {
 
 .wrapper {   
     margin: 0 auto;
-    width: 1020px;
+    max-width: 1020px;
 }
 
 /* header */
@@ -201,10 +201,12 @@ a {
 
 .slider-iphone-second-img{
     display: flex;
-    margin: 0 0 0 16vw;
+    margin: 0 0 0 22vw;
     align-items: center;
     width: 90.6vw;
     height: 59.6vw;
+    max-width: 940px;
+    max-height: 600px;
 }
 
 .iPhone-Vertical-right-shadow,
@@ -227,7 +229,7 @@ a {
 
 .iPhone-Vertical-right,
 .iPhone-Vertical-right-shadow{
-    margin-left: -2.6vw;
+    margin-left: -2.1vw;
 }
 
 .iPhone-Vertical-right,
@@ -253,14 +255,13 @@ a {
 /* our-services */
 
 .our-services {
-    padding: 6.7vw 2.8vw 0 4vw;
     background-color: #f2f2f2;
-    max-width: 94vw;   
+    max-width: 102vw;   
 }
 
 .our-services-text{
-    padding: 2.6vw 0 4.5vw 0;
-    max-width: 93.9vw;
+    padding: 2.6vw 4vw 4.5vw 4vw;
+    max-width: 940px;
     font-size: 19px;
     line-height: 31px;
     color: #767e9e;
@@ -269,6 +270,7 @@ a {
 }
 
 .title-our-services{
+    padding: 3.6vw 4vw 0 4vw;
     font-size: 30px;
     line-height: 22px;
     color: #666d89;
@@ -281,17 +283,17 @@ a {
 .our-service-info-img{
     display: flex;
     padding: 0.4%;
-    width: 305px;
+    max-width: 305px;
     height: 41%;
 }
 
 .our-service-3-columns{
+    padding: 0 40px 0 40px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
-    height: 48%;
 }
 
 .our-serviceslogo-img{
@@ -300,8 +302,8 @@ a {
 }
 
 .our-services-content-head{
-    height: 14px;
-    font-size: 19px;
+    height: 1.4vw;
+    font-size: 2.1vw;
     line-height: 15px;
     color: #666d89;
     font-family: "Lato";
@@ -311,7 +313,7 @@ a {
 }
 
 .our-services-content-text{
-    height: 6.5vw;
+    height: 100px;
     font-size: 13px;
     line-height: 22px;
     color: #767e9e;
@@ -319,6 +321,7 @@ a {
     margin: 12px 0 0 0;
     text-align: justify;
     max-width: 22.0vw;
+    width: 220px;
 }
 
 .our-service-info{
@@ -505,10 +508,11 @@ a {
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
+    padding-bottom: 20px;
 }
 
 .contact-box {
-    min-height: 44.3vw;
+    min-height: 440px;
     width: 300px; 
 }
 
@@ -527,8 +531,6 @@ a {
 }
 
 .contact-description{
-    height: 6.7vw;
-    max-Swidth: 29.9vw;
     font-size: 12px;
     line-height: 22px;
     color: #767e9e;
@@ -544,7 +546,7 @@ a {
 }
 
 .form-content-area{
-    max-width: 94vw;
+    max-width: 940px;
     margin: 0 4vw 0 4vw;
 }
 
@@ -580,7 +582,7 @@ p {
     display: flex;
     padding-top: 4.6vw;
     flex-wrap: wrap;
-    max-width: 94vw;
+    max-width: 940px;
     justify-content: space-between;
 }
 
@@ -725,7 +727,7 @@ textarea {
 
 .footer{
     max-width: 1020px;
-    min-height: 7.6vw;
+    min-height: 76px;
     background-color: #2d303a;
     margin: 0 auto;     
 }
@@ -768,24 +770,149 @@ textarea {
 
 
 
-@media (min-width: 1030px) {
-    .arrowLeft {
-      margin-top: 280px;
+@media (min-width: 1020px) {
+    /* header - slider - our */
+    .iphone-second-slide-arrow-left,
+    .slider-arrow-left {
+      margin: 280px 0 0 40px;
+    }
+
+    .slider-iphone-left {
+        padding-top: 50px;
+        padding-left: 50px;
+    }
+
+    .shadow-left {
+        padding-top: 53px;
+        padding-left: 54px;
+    }
+    
+    .shadow-right{
+        padding-bottom: 73px;
+        padding-left: 44px;
+    }
+
+    .slider-arrow-right-img-second-slider,
+    .slider-arrow-right {
+        margin-top: 280px;
+    }
+
+    .iPhone-Vertical-right, 
+    .iPhone-Vertical-left {
+        margin-top: -154px;
+    }
+
+    .iphone-vertical-dark {
+        height: 410px;
+        width: 204px;
+    }
+
+    .slider-iphone-second-img {
+        margin: 0 0 0 220px;
+    }
+
+    .iPhone-Vertical-right, .iPhone-Vertical-left {
+        width: 140px;
+        height: 290px;
+    }
+
+    .iPhone-Vertical-right-shadow, .iPhone-Vertical-left-shadow {
+        width: 156px;
+        height: 304px;
+    }
+
+    .iPhone-Vertical-right,
+    .iPhone-Vertical-right-shadow{
+        margin-left: -21px;
+    }
+
+    .title-our-services {
+        padding: 36px 40px 0 40px;
+    }
+
+    .our-services-text{
+        padding: 26px 40px 45px 40px;
+    }
+
+    .our-services-content-head{
+        height: 14px;
+        font-size: 21px;
+    }
+
+    /* portfolio */
+
+    .portfolio-title {
+        padding: 68px 40px 28px 40px;
+    }
+    
+    .portfolio-description {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .portfolio__navigation {
+        padding: 11px 0 20px 40px;
+    }
+
+    .art-colletion {
+        margin: 30px 24px 0 24px;
+    }
+
+    /* About us */
+
+    .about-us {
+        padding: 68px 0 28px 40px;
+    }
+
+    .about-us-description {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .contacts {
+        margin: 45px 40px 0 40px;
+    }
+
+    /* form */
+
+    .form-content-area {
+        margin: 0 40px 0 40px;
+    }
+
+    .form__title {
+        padding: 67px 0px 28px;
+    }
+
+    .layout-2-column {
+        padding-top: 46px;
+    }
+
+    .from__filed {
+        width: 580px;
+    }
+
+    #subj_description {
+        width: 580px;
     }
 }
 
+@media (max-width:768px) {
 
+    .contact-box{
+        width: 218px;
+        min-height: 390px;
+    }
 
+    .our-service-info-img {
+        margin-bottom: 20px;
+        padding-bottom: 1vw;
+    }
 
-
-
-
-
-
-
-@media (min-width: 768px) and (max-width: 1020px){
-    
-
-
+    .contact-img {
+        height: 218px;
+        width: 218px;
+    }
 
 }
+
+
