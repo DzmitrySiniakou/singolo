@@ -25,7 +25,8 @@ body {
     height: 90px;
     background: #2d303a;
     display: flex;
-    max-width: 102vw;
+    max-width: 1020px;
+    min-width: 375px;
 }
 
 .logo,
@@ -99,8 +100,10 @@ a {
 
 .iphone {
     height: 59vw;
-    max-width: 102vw;
+    max-width: 1020px;
+    min-width: 375px;
     max-height: 600px;
+    min-height: 221px;
     position: relative;
     background-color: #f06c64;
     border-bottom: 5px solid #ea676b; 
@@ -128,6 +131,8 @@ a {
     cursor: pointer;
     max-height: 46vw;
     max-width: 22vw;
+    min-height: 168.5px;
+    min-width: 79.5px;
 }
 
 .shadow-left{
@@ -135,6 +140,8 @@ a {
     padding-left: 5.4vw;
     max-height: 48.3vw;
     max-width: 24vw;
+    min-height: 186px;
+    min-width: 88px;
 }
 
 .slider-iphone-right {
@@ -146,6 +153,8 @@ a {
     cursor: pointer;
     max-height: 46vw;
     max-width: 22vw;
+    min-height: 168.5px;
+    min-width: 79.5px;
 }
 
 .shadow-right{
@@ -156,6 +165,8 @@ a {
     z-index: 1;
     max-height: 48.3vw;
     max-width: 24vw;
+    min-height: 186px;
+    min-width: 88px;
 }
 
 .slider-arrow-right {
@@ -256,7 +267,8 @@ a {
 
 .our-services {
     background-color: #f2f2f2;
-    max-width: 102vw;   
+    max-width: 1020px;
+    min-width: 375px;   
 }
 
 .our-services-text{
@@ -334,14 +346,16 @@ a {
 
 .our-services-border {
     height: 6px;
-    max-width: 102vw;
+    max-width: 1020px;
+    min-width: 375px;
     background-color: #ffffff;
 } 
 
 /* Portfolio */
 
 .portfolio {
-    max-width: 102vw; 
+    max-width: 1020px;
+    min-width: 375px; 
     background-color: #2d303a;
 }
 
@@ -552,6 +566,7 @@ a {
 
 .form {
     max-width: 1020px;
+    min-width: 375px;
     margin: 0 auto;
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
@@ -727,6 +742,7 @@ textarea {
 .footer{
     max-width: 1020px;
     min-height: 76px;
+    min-width: 375px;
     background-color: #2d303a;
     margin: 0 auto;     
 }
@@ -1054,5 +1070,165 @@ textarea {
 }
 
 @media (max-width: 375px) {
+    .header{
+        justify-content: center;
+    }
 
+    .header__buttons {
+        display: none;
+    }
+
+    .iphone-second-slide-arrow-left, .slider-arrow-left {
+        margin: 95.7px 0 0 4vw;
+    }
+
+    .slider-iphone-left {
+        padding-top: 20px;
+        padding-left: 20px;
+        z-index: 1;
+    }
+
+    .shadow-left{
+        padding-top: 20px;
+        position: absolute;
+        padding-left: 20px;
+        z-index: 0;
+        min-height: 178px;
+    }
+
+    .slider-iphone-right {
+        left: 53%;
+        position: absolute;
+        top: 15%;
+    }
+
+    .shadow-right {
+        left: 171px;
+        top: 33px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        position: relative;
+        min-height: 176px;
+    }
+
+    .slider-arrow-right {
+        margin-top: 100px;
+    }
+
+    .black-background {
+        margin: 44px 0 0 28px;
+        height: 123px;
+        width: 69px;
+    }
+
+    .title-our-services {
+        padding: 30px 20px 0 20px;
+    }
+
+    .our-service-3-columns {
+        padding: 0 15px 0 15px;
+        justify-content: center;
+    }
+
+    .our-service-info-img {
+        max-width: 380px;
+    }
+
+    .our-services-content-head {
+        height: 14px;
+        font-size: 21px;
+    }
+
+    .our-services-content-text {
+        font-size: 13px;
+        max-width: 72vw;
+        width: 286px;
+    }
+
+    /* portfolio */
+
+    .portfolio-title {
+        padding: 40px 0 30px 30px;
+    }
+
+    .portfolio-description {
+        padding: 0px 40px 0px 30px;
+    }
+
+    .portfolio-navigation {
+        padding: 10px 40px 0px 20px;
+    }
+
+    .img-collection {
+        width: 151px;
+        height: 128px;
+    }
+
+    .art-colletion-img {
+        width: 151px;
+        height: 128px;
+        margin: 5px;
+        margin-bottom: 5px;
+    }
+
+    .art-colletion {
+        margin: 3vw 25px 0 25px;
+    }
+
+    .art-navigation {
+        padding-bottom: 30px;
+    }
+
+
+    /* About us */
+
+    .about-us {
+        padding: 40px 25px 28px 25px;
+    }
+
+    .about-us-description {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .contacts {
+        justify-content: center;
+        margin: 30px 15px 0 15px;
+    }
+
+    .contact-img {
+        height: 313px;
+        width: 313px;
+    }
+
+    .contact-link {
+        padding-bottom: 20px;
+    }
+
+    /* form */
+
+    .form__title {
+        padding: 30px 25px 28px 25px;
+    }
+
+    .form__description {
+        padding: 0px 25px 0px 25px;
+    }
+
+    .layout-2-column {
+        padding: 30px 25px 0px 25px;
+    }
+
+    .from__filed {
+        width: 89vw;
+    }
+
+    #subj_description {
+        width: 89vw;
+    }
+
+    .form__fill-contact {
+        padding-top: 20px;
+        padding-left: 0px
+    }
 }
