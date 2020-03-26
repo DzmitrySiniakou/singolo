@@ -14,11 +14,40 @@ MENU.addEventListener('click', (event) => {
    event.target.classList.add('navigation-active');
 });
 
-function changeSlide(id){
-   document.getElementById((id == "block-one-phone") ? "block-two-phone": "block-one-phone").style.display = "none";
-   document.getElementById((id == "block-one-phone") ? "block-one-phone": "block-two-phone").style.display = "flex";
-   document.getElementById("block-one-phone").style.background = "#648BF0";
-}
+function changeSlideRigth(){
+   const firstSlideStyle = document.getElementById("block-two-phone").style.display;
+   if (firstSlideStyle != 'none') {
+      document.getElementById("block-one-phone").style.background = "#648BF0";
+      document.getElementById("block-one-phone").style.display = "flex";
+      document.getElementById("block-two-phone").style.animation = "leaveRight 1s forwards";
+      document.getElementById("block-one-phone").style.animation = "comeRight 1s forwards";
+      setTimeout(() => {document.getElementById("block-two-phone").style.display = "none"}, 10);
+   };
+   if (firstSlideStyle == 'none') {
+      
+      document.getElementById("block-one-phone").style.display = "none";
+      document.getElementById("block-two-phone").style.animation = "comeRight 1s forwards";
+      document.getElementById("block-one-phone").style.animation = "leaveRight 1s forwards";
+      setTimeout(() => {document.getElementById("block-two-phone").style.display = "flex"}, 10);
+   };
+};
+
+function changeSlideLeft(){
+   const firstSlideStyle = document.getElementById("block-two-phone").style.display;
+   if (firstSlideStyle != 'none') {
+      document.getElementById("block-one-phone").style.background = "#648BF0";
+      document.getElementById("block-one-phone").style.display = "flex";
+      document.getElementById("block-two-phone").style.animation = "leaveLeft 1s forwards";
+      document.getElementById("block-one-phone").style.animation = "comeLeft 1s forwards";
+      setTimeout(() => {document.getElementById("block-two-phone").style.display = "none"}, 10);
+   };
+   if (firstSlideStyle == 'none') {
+      document.getElementById("block-one-phone").style.display = "none";
+      document.getElementById("block-two-phone").style.animation = "comeLeft 1s forwards";
+      document.getElementById("block-one-phone").style.animation = "leaveLeft 1s forwards";
+      setTimeout(() => {document.getElementById("block-two-phone").style.display = "flex"}, 10);
+   };
+};
 
 CHANGE_PHONE_DISPLAY.addEventListener('click', () => {
    document.getElementById('black-background').style.display = "inline";
@@ -42,7 +71,8 @@ MENU_PORTFOLIO.addEventListener('click', (event) => {
 });
 
 ART_COLLECTION_ACTIVE.addEventListener('click', (event) => {
-   ART_COLLECTION_ACTIVE.querySelectorAll('a').forEach(el => el.classList.remove('art-colleting-active'));
+   ART_COLLECTION_ACTIVE.querySelectorAll('img').forEach(e => {
+      e.classList.remove('art-colleting-active')});
    event.target.classList.add('art-colleting-active');
 });
 
@@ -66,19 +96,24 @@ function changePosition(firstIndex, secondIndex, arr){
 
 BUTTON.addEventListener('click', (event) => {
    event.preventDefault();
+   const name = document.getElementById('name_req').value.toString();
+   const mail = document.getElementById('mail_req').value.toString();
    const subject = document.getElementById('subj_req').value.toString();
-   const subjectDescription = document.getElementById('subj_req').value.toString();
-   if (subject === ''){
-      document.getElementById('subj_result').innerText = "Без темы";
-   } else {
-      document.getElementById('subj_result').innerText = subject; 
-   }
-   if (subjectDescription === ''){
-      document.getElementById('result_description').innerText = 'Без описания';
-   } else {
-      document.getElementById('result_description').innerText = subjectDescription; 
-   }
-   document.getElementById('message-block').classList.remove('hidden');
+   const subjectDescription = document.getElementById('subj_description').value.toString();
+   if (mail !== '' && mail.includes('@')) {
+      if (subject === ''){
+         document.getElementById('subj_result').innerText = "Без темы";
+      } else {
+         document.getElementById('subj_result').innerText = subject; 
+      }
+      if (subjectDescription === ''){
+         document.getElementById('result_description').innerText = 'Без описания';
+      } else {
+         document.getElementById('result_description').innerText = subjectDescription; 
+      }
+      document.getElementById('message-block').classList.remove('hidden');
+   } 
+
 });
 
 CLOSE_BUTTON.addEventListener('click', (event) => {

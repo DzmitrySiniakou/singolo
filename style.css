@@ -193,19 +193,19 @@ a {
 .black-background-horizontal,
 .black-background{
     position: absolute;
-    height: 33.4vw;
-    width: 19.0vw;
+    height: 32.8vw;
+    width: 18.5vw;
     z-index: 6;
     cursor: pointer;
 }
 
 .black-background{
-    margin: 11.8vw 0 0 6.7vw;
+    margin: 11.2vw 0 0 6.2vw;
 }
 
 .black-background-horizontal{
     transform: rotate(90deg);
-    margin: 11.5vw 0 0 20.1vw;
+    margin: 11.15vw 0 0 19.7vw;
 }
 
 /* second slide */
@@ -481,11 +481,11 @@ a {
 }
 
 .art-colleting-active{
-    border-color: red;
-    border: 5px;
+    border-color: #f06c64 !important;
+    border: solid 5px;
     z-index: 10;
-    width: 220px;
-    height: 187px; 
+    width: 212px;
+    height: 178px; 
 }
 
 /* About us*/
@@ -784,6 +784,61 @@ textarea {
 }
 
 
+@keyframes comeLeft {
+    from {
+      margin-left: 100%;
+      margin-right: -100%;
+      opacity: 0;
+    }
+  
+    to {
+      margin-left: 0;
+      margin-right: 0;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes leaveLeft {
+    from {
+      margin-left: 0;
+      margin-right: 0;
+      opacity: 1;
+    }
+  
+    to {
+      margin-left: -100%;
+      margin-right: 100%;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes comeRight {
+    from {
+      margin-right: 100%;
+      margin-left: -100%;
+      opacity: 0;
+    }
+  
+    to {
+      margin-right: 0;
+      margin-left: 0;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes leaveRight {
+    from {
+      margin-left: 0;
+      margin-right: 0;
+      opacity: 1;
+    }
+  
+    to {
+      margin-left: 100%;
+      margin-right: -100%;
+      opacity: 0;
+    }
+  }
 
 @media (min-width: 1020px) {
     /* header - slider - our */
@@ -840,6 +895,21 @@ textarea {
     .iPhone-Vertical-right-shadow{
         margin-left: -21px;
     }
+
+    /* black display */
+    .black-background {
+        margin: 114px 0 0 63px;
+    }
+
+    .black-background-horizontal, .black-background {
+        height: 337px;
+        width: 192px;
+    }
+
+    .black-background-horizontal {
+        margin: 111px 0 0 199px;
+    }
+
 
     .title-our-services {
         padding: 36px 40px 0 40px;
@@ -913,6 +983,19 @@ textarea {
 
 @media (min-width: 768px) and (max-width:1020px) {
 
+    .black-background {
+        margin: 11.4vw 0 0 6.3vw;
+    }
+
+    .black-background-horizontal, .black-background {
+        height: 33.7vw;
+        width: 19.2vw;
+    }
+
+    .black-background-horizontal {
+        margin: 11.1vw 0 0 19.9vw;
+    }
+
     .contact-box{
         width: 218px;
         min-height: 390px;
@@ -954,6 +1037,19 @@ textarea {
 
     .slider-arrow-right-img-second-slider {
         margin: 28.1vw 0 0 -8.5vw;
+    }
+
+    .black-background {
+        margin: 11.5vw 0 0 6.3vw;
+    }
+
+    .black-background-horizontal, .black-background {
+        height: 33.5vw;
+        width: 19vw;
+    }
+
+    .black-background-horizontal {
+        margin: 11.1vw 0 0 18.6vw;
     }
 
     /* our services */
@@ -1116,9 +1212,16 @@ textarea {
     }
 
     .black-background {
-        margin: 44px 0 0 28px;
-        height: 123px;
-        width: 69px;
+        margin: 44.5px 0 0 25.3px;
+    }
+
+    .black-background-horizontal, .black-background {
+        height: 125px;
+        width: 72.5px;
+    }
+
+    .black-background-horizontal {
+        margin: 57.1px 0 0 174.3px;
     }
 
     .title-our-services {
@@ -1232,3 +1335,4 @@ textarea {
         padding-left: 0px
     }
 }
+
