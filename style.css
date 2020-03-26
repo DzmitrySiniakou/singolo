@@ -29,6 +29,13 @@ body {
     min-width: 375px;
 }
 
+.Burger-menu-icon {
+    width: 30px;
+    height: 25px;
+    display: none;
+}
+
+
 .logo,
 .header h1 {
     line-height: 6px;
@@ -476,10 +483,6 @@ a {
     height: 187px;
 }
 
-.img-collection:hover {
-
-}
-
 .art-colleting-active{
     border-color: #f06c64 !important;
     border: solid 5px;
@@ -703,6 +706,7 @@ textarea {
 
 #message {
     position: absolute;
+    margin: -125px 0 0 -70px;
     top: 50%;
     left: 50%;
     border: 2px solid black;
@@ -1096,6 +1100,14 @@ textarea {
         height: 128px;
     }
 
+    .art-colleting-active{
+        border-color: #f06c64 !important;
+        border: solid 5px;
+        z-index: 10;
+        width: 141px;
+        height: 118px;
+    }
+    
     .art-colletion-img {
         width: 151px;
         height: 128px;
@@ -1168,6 +1180,14 @@ textarea {
 @media (max-width: 375px) {
     .header{
         justify-content: center;
+    }
+
+    .Burger-menu-icon {
+        display: block;
+        position: absolute;
+        top: 35px;
+        left: 30px;
+        cursor: pointer;
     }
 
     .header__buttons {
@@ -1262,9 +1282,12 @@ textarea {
         padding: 10px 40px 0px 20px;
     }
 
-    .img-collection {
-        width: 151px;
-        height: 128px;
+    .art-colleting-active{
+        border-color: #f06c64 !important;
+        border: solid 5px;
+        z-index: 10;
+        width: 141px;
+        height: 118px;
     }
 
     .art-colletion-img {
