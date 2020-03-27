@@ -58,7 +58,7 @@ h1 {
     justify-content: space-between;  
 }
 
-li:hover{
+.navigation li:hover{
     background-color: #45545b;
     border-radius: 100px;
     transition: all .3s;
@@ -846,6 +846,10 @@ textarea {
 
 @media (min-width: 1020px) {
     /* header - slider - our */
+    .hamburger-menu {
+        display: none;
+    }
+
     .iphone-second-slide-arrow-left,
     .slider-arrow-left {
       margin: 280px 0 0 40px;
@@ -986,6 +990,9 @@ textarea {
 }
 
 @media (min-width: 768px) and (max-width:1020px) {
+    .hamburger-menu {
+        display: none;
+    }
 
     .black-background {
         margin: 11.4vw 0 0 6.3vw;
@@ -1022,6 +1029,55 @@ textarea {
         justify-content: center;
     }
 
+    .Burger-menu-icon {
+        display: block;
+        position: absolute;
+        top: 35px;
+        left: 30px;
+        cursor: pointer;
+        /* transform: rotate(90deg); */
+    }
+
+    .logo-location {
+        display: flex;
+        position: absolute;
+        margin-left: 100px;
+    }
+
+    .hamburger-menu {
+        display: none;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: #0008;
+        z-index: 10;
+    }
+
+    .hamburger-navigation {
+        height: 812px;
+        width: 278px;
+        background: #2d303a;
+    }
+
+    .burger-list {
+        margin: 232px 0 0 71px;
+        font-size: 42px;
+    }
+
+    .burger-list a {
+        display: inline;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .burger-list a:hover{
+        background-color: #45545b;
+        border-radius: 100px;
+        transition: all .3s;
+    } 
+    
     h1 {
         padding-left: 0px;
     }
@@ -1189,6 +1245,46 @@ textarea {
         left: 30px;
         cursor: pointer;
     }
+
+    .logo-location {
+        display: flex;
+        position: absolute;
+        margin-left: 60px;
+    }
+
+    .hamburger-menu {
+        display: none;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: #0008;
+        z-index: 10;
+    }
+
+    .hamburger-navigation {
+        height: 812px;
+        width: 278px;
+        background: #2d303a;
+    }
+
+    .burger-list {
+        margin: 232px 0 0 71px;
+        font-size: 42px;
+    }
+
+    .burger-list a {
+        display: inline;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .burger-list a:hover{
+        background-color: #45545b;
+        border-radius: 100px;
+        transition: all .3s;
+    } 
 
     .header__buttons {
         display: none;

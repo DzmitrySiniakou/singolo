@@ -1,11 +1,18 @@
+// header
 const MENU = document.getElementById('navigation');
+const MENU_BURGER = document.getElementById('burger-list');
+const BURGER_BUTTON = document.getElementById('hamburger');
+const BURGER_BUTTON_CLOSE = document.getElementById('Burger-menu-icon-rotate');
+// slider
 const CHANGE_PHONE_DISPLAY = document.getElementById('slider-iphone-left');
 const CHANGE_PHONE_DISPLAY_HORIZ = document.getElementById('slider-iphone-right');
 const BLACK_BACKGROUND_PHONE = document.getElementById('black-background');
 const BLACK_BACKGROUND_PHONE_HORIZ = document.getElementById('black-background-horizontal');
+// portfolio
 const MENU_PORTFOLIO = document.getElementById('portfolio-navigation');
 const ART_COLLECTION_IMGS = document.getElementsByClassName('art-colletion-img');
 const ART_COLLECTION_ACTIVE = document.getElementById('art-colletion');
+// form
 const BUTTON = document.getElementById('btn');
 const CLOSE_BUTTON = document.getElementById('close-btn');
 
@@ -13,6 +20,22 @@ MENU.addEventListener('click', (event) => {
    MENU.querySelectorAll('a').forEach(el => el.classList.remove('navigation-active'));
    event.target.classList.add('navigation-active');
 });
+
+MENU_BURGER.addEventListener('click', (event) => {
+   MENU_BURGER.querySelectorAll('a').forEach(el => el.classList.remove('navigation-active'));
+   event.target.classList.add('navigation-active');
+   document.getElementById('hamburger-menu').style.display = 'none';
+});
+
+BURGER_BUTTON.addEventListener('click', () => {
+   document.getElementById('hamburger-menu').style.display = 'flex';
+   document.getElementById('Burger-menu-icon-rotate').style = 'transform:rotate(90deg)';
+});
+
+BURGER_BUTTON_CLOSE.addEventListener('click', () => {
+   document.getElementById('hamburger-menu').style.display = 'none';
+});
+
 
 function changeSlideRigth(){
    const firstSlideStyle = document.getElementById("block-two-phone").style.display;
